@@ -1,0 +1,284 @@
+:root {
+    --mainColor: #DAC5A7;
+    --mainBgColor: #181716;
+    --hoverColor: #2b2828;
+    scroll-behavior: unset;
+}
+
+body {
+    background-color: var(--mainBgColor);
+}
+
+.mainColor {
+    color: var(--mainColor);
+}
+
+.mainFont {
+    font-family: 'Satoshi-Light';
+    ;
+}
+
+.brownBg {
+    background-color: var(--mainBgColor);
+    display: none;
+    padding: 10px 20px;
+}
+
+
+
+/*! Navbar */
+
+.myNavbar {
+    height: 75px;
+    margin-top: 30px;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    border: solid 1px var(--mainColor);
+    border-radius: 5px;
+    width: 500px;
+}
+
+.myNavbar ul li {
+    list-style: none;
+}
+
+.myNavbar ul li a {
+    text-decoration: none;
+    color: var(--mainColor);
+    overflow: hidden;
+    padding: 0px 5px;
+}
+
+.myNavbar a::before {
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: var(--mainColor);
+    position: absolute;
+    bottom: -7px;
+    transition: all 0.5s;
+}
+
+.active::before{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: var(--mainColor);
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+}
+
+.myNavbar li:hover a::before {
+    left: 0;
+    width: 100%;
+}
+
+/*!      Hoome Section      !*/
+
+div :where(h1, h2) {
+    font-family: 'Satoshi-Light';
+    letter-spacing: 10px;
+    color: var(--mainColor);
+    font-size: 100px;
+}
+
+#home p {
+    font-family: 'Satoshi-Light';
+    color: var(--mainColor);
+    font-size: 50px;
+    letter-spacing: 10px;
+
+
+}
+
+/* h2 {
+    font-size: 120px;
+    letter-spacing: 10px;
+    font-style: italic;
+
+} */
+
+.bgLayer {
+    background-image: url(../images/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.darkLayer {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/*!    leftsidebar   !*/
+
+#leftSideBar {
+    width: 0%;
+    height: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+
+}
+
+.open {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    cursor: pointer;
+}
+
+.gold {
+    width: 40px;
+    height: 40px;
+    background-color: #DAC5A7;
+    cursor: pointer;
+
+}
+
+.red {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    cursor: pointer;
+
+}
+
+.purple {
+    width: 40px;
+    height: 40px;
+    background-color: purple;
+    cursor: pointer;
+
+}
+
+.white {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.blue {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    cursor: pointer;
+
+}
+
+
+.imgs {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*!     About Secion     !*/
+
+
+#about h3 {
+    font-size: 30px;
+    color: var(--mainColor);
+    border: solid 2px var(--mainColor);
+}
+
+h3+div {
+    border: solid 2px var(--mainColor);
+    border-top: none;
+    color: var(--mainColor);
+}
+
+.bandName {
+    cursor: pointer;
+}
+
+
+/*!    Counter    !*/
+
+.time {
+    border: solid 3px var(--mainColor);
+}
+
+#counter {
+    background-image: url(../images/6.jpeg);
+    background-position: center;
+    background-size: contain;
+}
+
+
+/*!    Contact    !*/
+
+.contactIcons i {
+    border: solid 2px var(--mainColor);
+    color: var(--mainColor);
+    transition: all 0.3s;
+
+}
+
+.contactIcons i:hover {
+    background-color: var(--hoverColor);
+}
+
+.lineHeight {
+    line-height: 25px;
+}
+
+
+/*! Form */
+
+input {
+    background-color: transparent;
+    border: 2px solid var(--mainColor);
+    padding: 8px 13px;
+    border-radius: 5px;
+    color: var(--mainColor);
+    transition: all 0.3s;
+}
+
+input:focus {
+    box-shadow: inset 0px 0px 10px var(--mainColor);
+    border-color: var(--mainColor);
+    outline: none;
+}
+
+textarea {
+    background-color: transparent;
+    border: 2px solid var(--mainColor);
+    border-radius: 5px;
+    color: var(--mainColor);
+    transition: all 0.5s;
+    padding: 10px;
+}
+
+
+textarea:focus {
+    box-shadow: inset 0px 0px 10px var(--mainColor);
+    border-color: var(--mainColor);
+    outline: none;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid var(--mainColor);
+    border-radius: 10px;
+    color: var(--mainColor);
+    transition: all 0.5s;
+    padding: 10px;
+    width: 30%;
+}
+
+button:hover {
+    background-color: var(--hoverColor);
+}
+
+#errorMessage{
+    display: none;
+}

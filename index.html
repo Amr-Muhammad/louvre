@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/satoshi.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <nav id="navbar" class="myNavbar position-fixed mx-auto start-50 translate-middle-x">
+        <div class="d-flex justify-content-around h-100 align-items-center">
+            <p class="mainFont mainColor pt-2 fs-2">Concert.</p>
+            <ul class=" d-lg-flex pt-2 ">
+                <li class="me-1 position-relative">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="me-1 position-relative ">
+                    <a href="#about">About</a>
+                </li>
+                <li class="me-1 position-relative ">
+                    <a href="#counter">Counter</a>
+                </li>
+                <li class="position-relative ">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="home" class="bgLayer">
+        <div class="darkLayer">
+            <div class="container vh-100 d-flex flex-column align-items-center justify-content-center">
+                <div class="d-flex justify-content-center align-items-center">
+                    <h1 class="text-center d-inline-block mx-4">Egyption</h1>
+                    <h2 class="text-center">Concert!</h2>
+                </div>
+                <div>
+                    <p>July 28th, 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="leftSideBar" class="d-flex justify-content-center flex-column">
+
+            <div class="open d-flex align-items-center">
+                <i class="ms-3 fa-solid fa-bars fa-3x"></i>
+                <span class="ms-3 fs-4">Open</span>
+            </div>
+            <div class="d-flex justify-content-around w-100 mb-5">
+                <div class="colors gold"></div>
+                <div class="colors red"></div>
+                <div class="colors purple"></div>
+                <div class="colors white"></div>
+                <div class="colors blue"></div>
+            </div>
+
+            <div class="d-flex justify-content-around w-100">
+                <div>
+                    <img class="imgs w-75" src="images/1.jpg" alt="">
+                </div>
+                <div>
+                    <img class="imgs w-75" src="images/5.jpg" alt="">
+                </div>
+                <div>
+                    <img class="imgs w-75" src="images/3.jpg" alt="">
+                </div>
+                <div>
+                    <img class="imgs w-75" src="images/6.jpeg" alt="">
+                </div>
+                <div>
+                    <img class="imgs w-75" src="images/7.jpg" alt="">
+                </div>
+                <div>
+                    <img class="imgs w-75" src="images/6.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="about" class="py-5">
+        <div class="container py-5 d-flex flex-column justify-content-center align-items-center h-100">
+
+            <div class="w-50">
+                <h3 class="bandName mainFont py-2 m-0 text-center">First Band</h3>
+                <div class="brownBg aha">
+                    <h4 class="mainColor mainFont fw-bold fst-italic pt-1">“Cairokee”</h4>
+                    <p class="px-4">Cairokee is an Egyptian rock band that was officially launched in 2003 but came to
+                        prominence
+                        with its revolutionary music following the Egyptian Revolution of 2011 due to its
+                        politically-inspired lyrics and protest songs released following the uprising.</p>
+                </div>
+            </div>
+
+            <div class="w-50">
+                <h3 class="bandName mainFont py-2 m-0 text-center">Second Band</h3>
+                <div class="brownBg">
+                    <h4 class="mainColor mainFont fw-bold fst-italic pt-1">“Cairokee”</h4>
+                    <p class="px-4">Cairokee is an Egyptian rock band that was officially launched in 2003 but came to
+                        prominence
+                        with its revolutionary music following the Egyptian Revolution of 2011 due to its
+                        politically-inspired lyrics and protest songs released following the uprising.</p>
+                </div>
+            </div>
+
+            <div class="w-50">
+                <h3 class="bandName mainFont py-2 m-0 text-center">Third Band</h3>
+                <div class="brownBg">
+                    <h4 class="mainColor mainFont fw-bold fst-italic pt-1">“Cairokee”</h4>
+                    <p class="px-4">Cairokee is an Egyptian rock band that was officially launched in 2003 but came to
+                        prominence
+                        with its revolutionary music following the Egyptian Revolution of 2011 due to its
+                        politically-inspired lyrics and protest songs released following the uprising.</p>
+                </div>
+            </div>
+
+            <div class="w-50">
+                <h3 class="bandName mainFont py-2 m-0 text-center">Fourth Band</h3>
+                <div class="brownBg">
+                    <h4 class="mainColor mainFont fw-bold fst-italic pt-1">“Cairokee”</h4>
+                    <p class="px-4">Cairokee is an Egyptian rock band that was officially launched in 2003 but came to
+                        prominence
+                        with its revolutionary music following the Egyptian Revolution of 2011 due to its
+                        politically-inspired lyrics and protest songs released following the uprising.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="counter">
+        <div class="darkLayer py-5">
+            <div class="container py-5">
+                <div class="row py-5">
+                    <div class="col-md-3">
+                        <div class="time py-5 text-center mainColor fs-2 fw-bold">
+                            <span id="days"></span>
+                            <span>D</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="time py-5 text-center mainColor fs-2 fw-bold">
+                            <span id="hours"></span>
+                            <span>H</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="time py-5 text-center mainColor fs-2 fw-bold">
+                            <span id="minutes"></span>
+                            <span>M</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="time py-5 text-center mainColor fs-2 fw-bold">
+                            <span id="seconds"></span>
+                            <span>S</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="py-5">
+
+        <div class="container py-5">
+
+            <div class="mainColor mb-5">
+                <h4 class="mainFont fa-4x">Join Now!</h4>
+                <div class="ps-3 d-flex align-items-center">
+                    <i class="fa-solid fa-caret-right me-2 fs-3"></i>
+                    <p class="m-0 fs-4">What are you waiting for,<span class="fst-italic fw-bold"> Message us!</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mainColor">
+                    <div class="d-flex flex-column mb-5">
+                        <h5 class="fa-2x mainFont mb-3">Contact Info</h5>
+                        <p class="lineHeight ps-3 pe-5 mb-5">Why you should hire me writeup Lorem ipsum dolor sit amet,
+                            consectetuer
+                            adipiscing elit.
+                            Aenean
+                            commodo
+                            ligula eget dolor. Aenean massa. Cum sociis natoque nascetur ridiculus mus.</p>
+                        <div class="d-flex align-items-center ps-3">
+                            <i class="fa-solid fa-location-dot me-2"></i>
+                            <p class="m-0 p-0">New alamein city, Egypt</p>
+                        </div>
+                        <div class="d-flex align-items-center mt-4 ps-3">
+                            <i class="fa-regular fa-envelope me-2"></i>
+                            <p class="m-0 p-0">hello@uigrid.com</p>
+                        </div>
+                        <div class="d-flex align-items-center mt-4 ps-3">
+                            <i class="fa-solid fa-phone me-2"></i>
+                            <p class="m-0 p-0">001-000-000-000</p>
+                        </div>
+                    </div>
+                    <div class="contactIcons my-4 fs-4">
+                        <a href=""><i class="p-3 rounded-3 me-3 fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="p-3 rounded-3 me-3 fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="p-3 rounded-3 me-3 fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="p-3 rounded-3 me-3 fa-brands fa-dribbble"></i></a>
+                        <a href=""><i class="p-3 rounded-3 me-3 fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mainColor">
+
+                    <form class="d-flex flex-column">
+                        <input type="text" placeholder="Enter your name" class="mb-4">
+                        <input type="email" placeholder="Enter your email" class="mb-4">
+                        <textarea class="mb-4" placeholder="Enter message" cols="30" rows="5"></textarea>
+                        <p id="userMessageParagraph" class="fs-5"><span id="userMessageSpan">100</span> Character Reamining</p>
+                        <p id="errorMessage" class="fs-5 text-danger">You've excceded the limit</p>
+                        <button class="mx-auto">Send Message</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
