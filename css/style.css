@@ -5,6 +5,7 @@
     scroll-behavior: unset;
 }
 
+
 body {
     background-color: var(--mainBgColor);
 }
@@ -15,14 +16,163 @@ body {
 
 .mainFont {
     font-family: 'Satoshi-Light';
-    ;
 }
 
 .brownBg {
     background-color: var(--mainBgColor);
     display: none;
     padding: 10px 20px;
+    z-index: 1454;
 }
+
+/*!---------------------------- */
+
+
+
+
+
+
+
+/*!     Scrollbar      */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: var(--mainBgColor);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--mainColor);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6d5d50;
+}
+
+::-webkit-scrollbar-button {
+    background-color: var(--mainColor);
+}
+
+/*!---------------------------- */
+
+
+
+
+
+
+
+
+/*!      Loading Spinner     */
+
+
+.Loadingspinner {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 64684646;
+}
+
+
+.loader {
+    transform: rotateZ(45deg);
+    perspective: 1000px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.loader:before,
+.loader:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    transform: rotateX(70deg);
+    animation: 1s spin linear infinite;
+}
+
+.loader:after {
+    color: #FF3D00;
+    transform: rotateY(70deg);
+    animation-delay: .4s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+}
+
+@keyframes rotateccw {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+@keyframes spin {
+
+    0%,
+    100% {
+        box-shadow: .2em 0px 0 0px currentcolor;
+    }
+
+    12% {
+        box-shadow: .2em .2em 0 0 currentcolor;
+    }
+
+    25% {
+        box-shadow: 0 .2em 0 0px currentcolor;
+    }
+
+    37% {
+        box-shadow: -.2em .2em 0 0 currentcolor;
+    }
+
+    50% {
+        box-shadow: -.2em 0 0 0 currentcolor;
+    }
+
+    62% {
+        box-shadow: -.2em -.2em 0 0 currentcolor;
+    }
+
+    75% {
+        box-shadow: 0px -.2em 0 0 currentcolor;
+    }
+
+    87% {
+        box-shadow: .2em -.2em 0 0 currentcolor;
+    }
+}
+
+/*!---------------------------- */
+
+
+
 
 
 
@@ -36,6 +186,28 @@ body {
     border: solid 1px var(--mainColor);
     border-radius: 5px;
     width: 500px;
+    z-index: 56466544;
+}
+
+.myNavbar button:disabled {
+    border: none;
+    outline: none;
+}
+
+.myNavbar button {
+    display: none !important;
+    cursor: unset;
+}
+
+.myNavbar button i {
+
+    cursor: pointer;
+
+
+}
+
+.myNavbar ul {
+    display: flex;
 }
 
 .myNavbar ul li {
@@ -59,7 +231,7 @@ body {
     transition: all 0.5s;
 }
 
-.active::before{
+.active::before {
     content: '';
     height: 2px;
     width: 100%;
@@ -74,6 +246,13 @@ body {
     width: 100%;
 }
 
+/*!---------------------------- */
+
+
+
+
+
+
 /*!      Hoome Section      !*/
 
 div :where(h1, h2) {
@@ -87,34 +266,31 @@ div :where(h1, h2) {
     font-family: 'Satoshi-Light';
     color: var(--mainColor);
     font-size: 50px;
-    letter-spacing: 10px;
-
-
+    letter-spacing: 5px;
 }
-
-/* h2 {
-    font-size: 120px;
-    letter-spacing: 10px;
-    font-style: italic;
-
-} */
 
 .bgLayer {
     background-image: url(../images/1.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: auto;
 }
 
 .darkLayer {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+/*!---------------------------- */
+
+
+
+
+
+
 
 /*!    leftsidebar   !*/
 
 #leftSideBar {
-    width: 0%;
-    height: 50%;
+    width: 15%;
     background-color: transparent;
     position: absolute;
     top: 50%;
@@ -123,7 +299,21 @@ div :where(h1, h2) {
     border: 1px solid var(--mainColor);
     backdrop-filter: blur(30px);
     border-radius: 10px;
+    right: calc(100% + 3px);
+    transition: all 0.2s linear;
+    z-index: 654646;
+}
 
+#leftSideBar:hover {
+    right: 99%;
+}
+
+#leftSideBar img {
+    cursor: pointer;
+}
+
+.customize {
+    top: 5%;
 }
 
 .open {
@@ -174,44 +364,110 @@ div :where(h1, h2) {
 
 }
 
+.black {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    cursor: pointer;
+
+}
+
 
 .imgs {
     width: 50px;
     height: 50px;
 }
 
+/*!---------------------------- */
 
-/*!     About Secion     !*/
 
 
-#about h3 {
+
+
+
+
+
+/*!     Jewelry Secion     !*/
+
+
+#jewelry h3 {
     font-size: 30px;
     color: var(--mainColor);
     border: solid 2px var(--mainColor);
 }
 
-h3+div {
+#jewelry h3+div {
     border: solid 2px var(--mainColor);
     border-top: none;
     color: var(--mainColor);
 }
 
-.bandName {
+#jewelry p {
+    letter-spacing: 3px;
+}
+
+.jewlName {
     cursor: pointer;
 }
 
+.jewelryLeft {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+}
 
-/*!    Counter    !*/
+.jewelryRight {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.firstJewl {
+    display: flex;
+    opacity: 0;
+    z-index: -1;
+}
+
+.secondJewl {
+    display: flex;
+    opacity: 0;
+    z-index: -1;
+}
+
+.thirdJewl {
+    display: flex;
+    opacity: 0;
+    z-index: -1;
+}
+
+.jewelry img {
+    width: 75%;
+}
+
+.thirdJewl img {
+    width: 50%;
+}
+
+
+/*!    Tour    !*/
 
 .time {
     border: solid 3px var(--mainColor);
 }
 
-#counter {
-    background-image: url(../images/6.jpeg);
+#tour {
+    background-image: url(../images/15.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
+
+/*!---------------------------- */
+
+
+
+
+
+
 
 
 /*!    Contact    !*/
@@ -230,6 +486,11 @@ h3+div {
 .lineHeight {
     line-height: 25px;
 }
+
+/*!---------------------------- */
+
+
+
 
 
 /*! Form */
@@ -279,6 +540,153 @@ button:hover {
     background-color: var(--hoverColor);
 }
 
-#errorMessage{
+#errorMessage {
     display: none;
+}
+
+/*!---------------------------- */
+
+
+
+.colorsContainer {
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+
+
+@media (max-width:999px) {
+    div :where(h1, h2) {
+        font-family: 'Satoshi-Light';
+        letter-spacing: 10px;
+        color: var(--mainColor);
+        font-size: 60px;
+    }
+
+    #home p {
+        font-family: 'Satoshi-Light';
+        color: var(--mainColor);
+        font-size: 30px;
+    }
+
+    .myNavbar {
+        width: 70%;
+        height: 60px;
+    }
+
+    .myNavbar ul {
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--mainBgColor);
+        backdrop-filter: blur(30px);
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        border: 1px solid var(--mainColor);
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .myNavbar ul {
+        padding: 10px 0px;
+    }
+
+    .myNavbar ul li {
+        padding: 10px 0px;
+    }
+
+    .myNavbar a::before {
+        bottom: 3px;
+    }
+
+    .active:before {
+        bottom: 3px;
+    }
+
+    .myNavbar button {
+        display: flex !important;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .colors {
+        flex-wrap: wrap;
+        gap: 3px;
+    }
+
+
+    #jewelry>p {
+        font-size: 40px;
+    }
+
+    #jewelry h3 {
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #jewelry img {
+        width: 30%;
+    }
+
+    #jewelry .jewelryLeft {
+        justify-content: start !important;
+    }
+
+    #jewelry .jewelryRight {
+        justify-content: end !important;
+    }
+
+
+    #tour h3 {
+        font-size: 40px;
+    }
+
+    #tour p {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width:900px) {
+
+    .colors {
+        flex-wrap: wrap;
+        gap: 3px;
+    }
+
+    #leftSideBar {
+        width: 150px;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .myNavbar {
+        width: 80%;
+        height: 50px;
+    }
+
+    .myNavbar button {
+        display: flex !important;
+    }
+
+    #tour .row {
+        width: 50% !important;
+    }
+
+    form button {
+        width: 140px;
+    }
+
+    #contact h4 {
+        font-size: 40px;
+    }
+
+    #contact h4+div p {
+        font-size: 20px;
+    }
+
 }
