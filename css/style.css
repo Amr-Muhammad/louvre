@@ -302,7 +302,7 @@ div :where(h1, h2) {
     /* border-radius: 10px; */
     right: calc(100% + 3px);
     transition: all 0.2s linear;
-    z-index: 654646;
+    z-index: 654646545466;
 }
 
 #leftSideBar:hover {
