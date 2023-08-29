@@ -51,9 +51,8 @@ $(document).ready(function () {
 
     $('#toggleNavbar').click(function () {
 
-        $('ul').slideToggle(500, function () {
+        $('ul').slideToggle(500)
 
-        })
         if ($('ul').height() <= 0) {
 
             $('ul').addClass('d-flex')
@@ -134,14 +133,14 @@ $(document).ready(function () {
             $('.brownBg').siblings().not('h3').animate({ opacity: '0' })
 
 
-            setTimeout(() => {                               //? 3shan a3ml delay ll code 3shan el div bta5od w2t 3shan tt7wl mn block l none
-                divState = $(this).next().css('display')
+            //? 3shan a3ml delay ll code 3shan el div bta5od w2t 3shan tt7wl mn block l none
+            divState = $(this).next().css('display')
 
-                if (divState == "block") {                  //? 3shan lw el user ft7 w2fl
+            if (divState == "block") {                  //? 3shan lw el user ft7 w2fl
 
-                    $(this).siblings().not('.brownBg', 'h3').animate({ opacity: '1' }, 1500)
-                }
-            }, 500);
+                $(this).siblings().not('.brownBg', 'h3').animate({ opacity: '1' }, 1500)
+            }
+
         })
     })
 
@@ -223,7 +222,7 @@ $(document).ready(function () {
             let Contact = $('li')[3]
             $(Contact).addClass('active');
         }
-        else if ($(window).scrollTop() >= $('#tour').offset().top) {
+        else if ($(window).scrollTop() >= $('#tour').offset().top -1) {
             $('li').removeClass('active')
             let counter = $('li')[2]
             $(counter).addClass('active');
